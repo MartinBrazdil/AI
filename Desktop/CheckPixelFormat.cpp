@@ -1,0 +1,136 @@
+#include "CheckPixelFormat.h"
+
+#include <cstdio>
+#include <SDL.h>
+
+void CheckPixelFormat(Uint32 pf)
+{
+	Uint32 type = SDL_PIXELTYPE(pf); //SDL_PIXELTYPE_PACKED32
+	Uint32 order = SDL_PIXELORDER(pf); //SDL_BITMAPORDER_4321
+	Uint32 layout = SDL_PIXELLAYOUT(pf); //SDL_PACKEDORDER_BGRX
+	Uint32 bpp = SDL_BITSPERPIXEL(pf);
+	bool indexed = SDL_ISPIXELFORMAT_INDEXED(pf);
+	bool alpha = SDL_ISPIXELFORMAT_ALPHA(pf);
+	bool fourcc = SDL_ISPIXELFORMAT_FOURCC(pf);
+
+	if (pf == SDL_PIXELFORMAT_INDEX1LSB)
+	{
+		printf("SDL_PIXELFORMAT_INDEX1LSB\n");
+	}
+	if (pf == SDL_PIXELFORMAT_INDEX1MSB)
+	{
+		printf("SDL_PIXELFORMAT_INDEX1MSB\n");
+	}
+	if (pf == SDL_PIXELFORMAT_INDEX4LSB)
+	{
+		printf("SDL_PIXELFORMAT_INDEX4LSB\n");
+	}
+	if (pf == SDL_PIXELFORMAT_INDEX4MSB)
+	{
+		printf("SDL_PIXELFORMAT_INDEX4MSB\n");
+	}
+	if (pf == SDL_PIXELFORMAT_INDEX8)
+	{
+		printf("SDL_PIXELFORMAT_INDEX8\n");
+	}
+	if (pf == SDL_PIXELFORMAT_RGB332)
+	{
+		printf("SDL_PIXELFORMAT_RGB332\n");
+	}
+	if (pf == SDL_PIXELFORMAT_RGB444)
+	{
+		printf("SDL_PIXELFORMAT_RGB444\n");
+	}
+	if (pf == SDL_PIXELFORMAT_RGB555)
+	{
+		printf("SDL_PIXELFORMAT_RGB555\n");
+	}
+	if (pf == SDL_PIXELFORMAT_BGR555)
+	{
+		printf("SDL_PIXELFORMAT_BGR555\n");
+	}
+	if (pf == SDL_PIXELFORMAT_ARGB4444)
+	{
+		printf("SDL_PIXELFORMAT_ARGB4444\n");
+	}
+	if (pf == SDL_PIXELFORMAT_RGBA4444)
+	{
+		printf("SDL_PIXELFORMAT_RGBA4444\n");
+	}
+	if (pf == SDL_PIXELFORMAT_ABGR4444)
+	{
+		printf("SDL_PIXELFORMAT_ABGR4444\n");
+	}
+	if (pf == SDL_PIXELFORMAT_BGRA4444)
+	{
+		printf("SDL_PIXELFORMAT_BGRA4444\n");
+	}
+	if (pf == SDL_PIXELFORMAT_ARGB1555)
+	{
+		printf("SDL_PIXELFORMAT_ARGB1555\n");
+	}
+	if (pf == SDL_PIXELFORMAT_RGBA5551)
+	{
+		printf("SDL_PIXELFORMAT_RGBA5551\n");
+	}
+	if (pf == SDL_PIXELFORMAT_ABGR1555)
+	{
+		printf("SDL_PIXELFORMAT_ABGR1555\n");
+	}
+	if (pf == SDL_PIXELFORMAT_BGRA5551)
+	{
+		printf("SDL_PIXELFORMAT_BGRA5551\n");
+	}
+	if (pf == SDL_PIXELFORMAT_RGB565)
+	{
+		printf("SDL_PIXELFORMAT_RGB565\n");
+	}
+	if (pf == SDL_PIXELFORMAT_BGR565)
+	{
+		printf("SDL_PIXELFORMAT_BGR565\n");
+	}
+	if (pf == SDL_PIXELFORMAT_RGB24)
+	{
+		printf("SDL_PIXELFORMAT_RGB24\n");
+	}
+	if (pf == SDL_PIXELFORMAT_BGR24)
+	{
+		printf("SDL_PIXELFORMAT_BGR24\n");
+	}
+	if (pf == SDL_PIXELFORMAT_RGB888)
+	{
+		printf("SDL_PIXELFORMAT_RGB888\n");
+	}
+	if (pf == SDL_PIXELFORMAT_RGBX8888)
+	{
+		printf("SDL_PIXELFORMAT_RGBX8888\n");
+	}
+	if (pf == SDL_PIXELFORMAT_BGR888)
+	{
+		printf("SDL_PIXELFORMAT_BGR888\n");
+	}
+	if (pf == SDL_PIXELFORMAT_BGRX8888)
+	{
+		printf("SDL_PIXELFORMAT_BGRX8888\n");
+	}
+	if (pf == SDL_PIXELFORMAT_ARGB8888)
+	{
+		printf("SDL_PIXELFORMAT_ARGB8888\n");
+	}
+	if (pf == SDL_PIXELFORMAT_RGBA8888)
+	{
+		printf("SDL_PIXELFORMAT_RGBA8888\n");
+	}
+	if (pf == SDL_PIXELFORMAT_ABGR8888)
+	{
+		printf("SDL_PIXELFORMAT_ABGR8888\n");
+	}
+	if (pf == SDL_PIXELFORMAT_BGRA8888)
+	{
+		printf("SDL_PIXELFORMAT_BGRA8888\n");
+	}
+	if (pf == SDL_PIXELFORMAT_ARGB2101010)
+	{
+		printf("SDL_PIXELFORMAT_ARGB2101010\n");
+	}
+}

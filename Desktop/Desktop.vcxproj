@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{445A18B7-5C2C-419C-AF90-6922E144F752}</ProjectGuid>
+    <RootNamespace>Desktop</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SDL2\lib\x64\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SDL2\lib\x64\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libfreetype-6.lib;SDL2main.lib;SDL2.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_gfx.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libfreetype-6.lib;SDL2main.lib;SDL2.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_gfx.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionSelection.h" />
+    <ClInclude Include="BanditActionSelection.h" />
+    <ClInclude Include="Bitset.h" />
+    <ClInclude Include="BreakOut.h" />
+    <ClInclude Include="CheckPixelFormat.h" />
+    <ClInclude Include="Convolution.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Desktop.h" />
+    <ClInclude Include="DQNLearning.h" />
+    <ClInclude Include="EGDQN.h" />
+    <ClInclude Include="EGEVMC.h" />
+    <ClInclude Include="EGFVMC.h" />
+    <ClInclude Include="EpizodicLearning.h" />
+    <ClInclude Include="GEVMC.h" />
+    <ClInclude Include="GFVMC.h" />
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="GraphObserver.h" />
+    <ClInclude Include="GreedyEvaluation.h" />
+    <ClInclude Include="GridWorld.h" />
+    <ClInclude Include="Group.h" />
+    <ClInclude Include="Hessian.h" />
+    <ClInclude Include="HyperparameterEvolution.h" />
+    <ClInclude Include="IAgent.h" />
+    <ClInclude Include="IExactQAgent.h" />
+    <ClInclude Include="ILayer.h" />
+    <ClInclude Include="IPerception.h" />
+    <ClInclude Include="IState.h" />
+    <ClInclude Include="IWorld.h" />
+    <ClInclude Include="KBandit.h" />
+    <ClInclude Include="MetaLearningAckley.h" />
+    <ClInclude Include="MiniBatch.h" />
+    <ClInclude Include="Network.h" />
+    <ClInclude Include="NeuralNetsMNIST.h" />
+    <ClInclude Include="Neurons.h" />
+    <ClInclude Include="OSEGEVMC.h" />
+    <ClInclude Include="OSEGFVMC.h" />
+    <ClInclude Include="OSGEVMC.h" />
+    <ClInclude Include="OSGFVMC.h" />
+    <ClInclude Include="Perceptron.h" />
+    <ClInclude Include="Perceptron2.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="RectPacking.h" />
+    <ClInclude Include="Histogram.h" />
+    <ClInclude Include="HistogramObserver.h" />
+    <ClInclude Include="IFEP.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="MNIST.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="Pixels.h" />
+    <ClInclude Include="PixelsObserver.h" />
+    <ClInclude Include="Random.h" />
+    <ClInclude Include="RU.h" />
+    <ClInclude Include="SDLHelpers.h" />
+    <ClInclude Include="TensorIterator.h" />
+    <ClInclude Include="Text.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="ValueIteration.h" />
+    <ClInclude Include="WindowObserver.h" />
+    <ClInclude Include="Tensor.h" />
+    <ClInclude Include="TextObserver.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="ValueObserver.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="WorldsStateValues.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CheckPixelFormat.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Desktop.cpp" />
+    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="GraphObserver.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="RectPacking.cpp" />
+    <ClCompile Include="Histogram.cpp" />
+    <ClCompile Include="HistogramObserver.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pixels.cpp" />
+    <ClCompile Include="PixelsObserver.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="SDLHelpers.cpp" />
+    <ClCompile Include="Text.cpp" />
+    <ClCompile Include="WindowObserver.cpp" />
+    <ClCompile Include="TextObserver.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="ValueObserver.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Consolas.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

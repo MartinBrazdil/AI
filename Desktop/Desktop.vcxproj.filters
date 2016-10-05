@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GUI">
+      <UniqueIdentifier>{2f9fcc44-61b7-489a-b5ba-ed2615dfbb18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI">
+      <UniqueIdentifier>{122bf870-f29a-4336-af4d-412cec0271eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Evolution">
+      <UniqueIdentifier>{cbd0ff63-df88-43c6-a213-a7aaf2e44206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Datasets">
+      <UniqueIdentifier>{a367e650-1948-4535-a0f2-fecb01643f90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tensor">
+      <UniqueIdentifier>{3670d95f-5e2f-4c85-ba3f-9567c8b6f1be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{8051f383-8f60-437b-a25a-5ff93e0cfb55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{d36dafcd-bf3a-4a03-9db8-8c6ed7cac73f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sprites">
+      <UniqueIdentifier>{4d7e2778-499e-4aa1-baac-c19cc7905bc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sprites">
+      <UniqueIdentifier>{cafa0a1a-c2e1-44e9-a76f-07631611ad0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI\Observers">
+      <UniqueIdentifier>{a78bf994-4ebe-48fc-bfba-d82fdb1a0f1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUI\Observers">
+      <UniqueIdentifier>{24757ce5-87c1-48f9-97b0-5f0cb737910b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Agents">
+      <UniqueIdentifier>{7991ebfd-414e-44c2-b09b-f69f7c2d1b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Experiments">
+      <UniqueIdentifier>{bfd5c018-7c0a-4346-83de-896b6e172f4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network">
+      <UniqueIdentifier>{884f001a-b845-48a7-9d0f-620821dd331c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Worlds">
+      <UniqueIdentifier>{ee01eeda-4eac-449c-aeda-1f729f7d9684}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CheckPixelFormat.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLHelpers.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Histogram.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Desktop.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="IFEP.h">
+      <Filter>Header Files\Evolution</Filter>
+    </ClInclude>
+    <ClInclude Include="MNIST.h">
+      <Filter>Header Files\Datasets</Filter>
+    </ClInclude>
+    <ClInclude Include="Tensor.h">
+      <Filter>Header Files\Tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Header Files\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphObserver.h">
+      <Filter>Header Files\GUI\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="HistogramObserver.h">
+      <Filter>Header Files\GUI\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelsObserver.h">
+      <Filter>Header Files\GUI\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="TextObserver.h">
+      <Filter>Header Files\GUI\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowObserver.h">
+      <Filter>Header Files\GUI\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Header Files\GUI\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="Pixels.h">
+      <Filter>Header Files\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="RectPacking.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Group.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueObserver.h">
+      <Filter>Header Files\GUI\Observers</Filter>
+    </ClInclude>
+    <ClInclude Include="EGDQN.h">
+      <Filter>Header Files\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="EGEVMC.h">
+      <Filter>Header Files\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="EGFVMC.h">
+      <Filter>Header Files\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="GEVMC.h">
+      <Filter>Header Files\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="GFVMC.h">
+      <Filter>Header Files\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="IAgent.h">
+      <Filter>Header Files\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="IExactQAgent.h">
+      <Filter>Header Files\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="OSEGEVMC.h">
+      <Filter>Header Files\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="OSEGFVMC.h">
+      <Filter>Header Files\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="OSGEVMC.h">
+      <Filter>Header Files\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="OSGFVMC.h">
+      <Filter>Header Files\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="RU.h">
+      <Filter>Header Files\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionSelection.h">
+      <Filter>Header Files\Experiments</Filter>
+    </ClInclude>
+    <ClInclude Include="BanditActionSelection.h">
+      <Filter>Header Files\Experiments</Filter>
+    </ClInclude>
+    <ClInclude Include="DQNLearning.h">
+      <Filter>Header Files\Experiments</Filter>
+    </ClInclude>
+    <ClInclude Include="EpizodicLearning.h">
+      <Filter>Header Files\Experiments</Filter>
+    </ClInclude>
+    <ClInclude Include="GreedyEvaluation.h">
+      <Filter>Header Files\Experiments</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperparameterEvolution.h">
+      <Filter>Header Files\Experiments</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaLearningAckley.h">
+      <Filter>Header Files\Experiments</Filter>
+    </ClInclude>
+    <ClInclude Include="NeuralNetsMNIST.h">
+      <Filter>Header Files\Experiments</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueIteration.h">
+      <Filter>Header Files\Experiments</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldsStateValues.h">
+      <Filter>Header Files\Experiments</Filter>
+    </ClInclude>
+    <ClInclude Include="Convolution.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Hessian.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="ILayer.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniBatch.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Network.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Neurons.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Perceptron.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Perceptron2.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Bitset.h">
+      <Filter>Header Files\Tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="TensorIterator.h">
+      <Filter>Header Files\Tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Header Files\Tensor</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakOut.h">
+      <Filter>Header Files\Worlds</Filter>
+    </ClInclude>
+    <ClInclude Include="GridWorld.h">
+      <Filter>Header Files\Worlds</Filter>
+    </ClInclude>
+    <ClInclude Include="IPerception.h">
+      <Filter>Header Files\Worlds</Filter>
+    </ClInclude>
+    <ClInclude Include="IState.h">
+      <Filter>Header Files\Worlds</Filter>
+    </ClInclude>
+    <ClInclude Include="IWorld.h">
+      <Filter>Header Files\Worlds</Filter>
+    </ClInclude>
+    <ClInclude Include="KBandit.h">
+      <Filter>Header Files\Worlds</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CheckPixelFormat.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLHelpers.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Histogram.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Desktop.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>Source Files\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphObserver.cpp">
+      <Filter>Source Files\GUI\Observers</Filter>
+    </ClCompile>
+    <ClCompile Include="HistogramObserver.cpp">
+      <Filter>Source Files\GUI\Observers</Filter>
+    </ClCompile>
+    <ClCompile Include="PixelsObserver.cpp">
+      <Filter>Source Files\GUI\Observers</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowObserver.cpp">
+      <Filter>Source Files\GUI\Observers</Filter>
+    </ClCompile>
+    <ClCompile Include="TextObserver.cpp">
+      <Filter>Source Files\GUI\Observers</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Pixels.cpp">
+      <Filter>Source Files\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="RectPacking.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ValueObserver.cpp">
+      <Filter>Source Files\GUI\Observers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Consolas.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
+  </ItemGroup>
+</Project>
